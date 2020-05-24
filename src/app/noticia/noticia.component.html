@@ -1,0 +1,9 @@
+<div *ngIf="noticia">
+    <h2>{{noticia['titulo']}}</h2>
+    <div>
+        <div>
+            <button (click)="share()">Compartilhar</button>
+        </div>
+    </div>
+    <p innerHTML="{{noticia['descricao']}}"></p>
+</div>
